@@ -1,0 +1,38 @@
+/* responsive.css - Responsive Styles for Enviro Logistics LLC */
+
+/* Tablet (max-width: 991px) */
+@media (max-width: 991px) {
+    .banner-content h1 { font-size: 36px; }
+    .about-content h2, .section-title h2, .choose-us-content h2 { font-size: 28px; }
+    .single-counter h2 { font-size: 36px; }
+    .navbar-nav { flex-direction: column; }
+    .header-left-content { flex-direction: column; text-align: center; }
+    .header-left-content li { margin-bottom: 10px; margin-right: 0; }
+}
+
+/* Mobile (max-width: 767px) */
+@media (max-width: 767px) {
+    .banner-area { padding: 100px 0; }
+    .banner-content h1 { font-size: 28px; }
+    .banner-content p { font-size: 16px; }
+    .about-us-area, .services-area, .choose-us-area, .counter-area, .pricing-area, .testimonials-area, .faq-area { padding: 50px 0; }
+    .single-services-box, .single-testimonials { margin: 0 auto 30px; max-width: 100%; }
+    .section-title h2 { font-size: 24px; }
+    .experience { position: static; margin-top: 20px; text-align: center; }
+    .choose-us-slider { flex-direction: column; }
+    .single-choose-us-box { margin: 5px auto; max-width: 200px; }
+    .faq-accordion .accordion-title { font-size: 16px; }
+    .footer-area .row { flex-direction: column; text-align: center; }
+    .single-footer-widget { margin-bottom: 30px; }
+    .go-top { bottom: 10px; right: 10px; width: 40px; height: 40px; }
+}
+
+/* Small Mobile (max-width: 480px) */
+@media (max-width: 480px) {
+    .top-header { font-size: 12px; }
+    .header-left-content li { font-size: 12px; }
+    .nav-link { font-size: 14px; }
+    .default-btn { padding: 8px 15px; font-size: 14px; }
+    .single-services-box { padding: 20px; }
+    .single-services-box h3 { font-size: 20px; }
+}

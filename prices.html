@@ -7,30 +7,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap Min CSS -->
-    <link rel="stylesheet" href="https://horizonlogisticsllc.us/frontend/assets/css/bootstrap.min.css">
-    <!-- Owl Theme Default Min CSS -->
-    <link rel="stylesheet" href="https://horizonlogisticsllc.us/frontend/assets/css/owl.theme.default.min.css">
-    <!-- Owl Carousel Min CSS -->
-    <link rel="stylesheet" href="https://horizonlogisticsllc.us/frontend/assets/css/owl.carousel.min.css">
-    <!-- Animate Min CSS -->
-    <link rel="stylesheet" href="https://horizonlogisticsllc.us/frontend/assets/css/animate.min.css">
-    <!-- Boxicons Min CSS -->
-    <link rel="stylesheet" href="https://horizonlogisticsllc.us/frontend/assets/css/boxicons.min.css">
-    <!-- Magnific Popup Min CSS -->
-    <link rel="stylesheet" href="https://horizonlogisticsllc.us/frontend/assets/css/magnific-popup.min.css">
-    <!-- Flaticon CSS -->
-    <link rel="stylesheet" href="https://horizonlogisticsllc.us/frontend/assets/css/flaticon.css">
-    <!-- Meanmenu Min CSS -->
-    <link rel="stylesheet" href="https://horizonlogisticsllc.us/frontend/assets/css/meanmenu.min.css">
-    <!-- Nice Select Min CSS -->
-    <link rel="stylesheet" href="https://horizonlogisticsllc.us/frontend/assets/css/nice-select.min.css">
-    <!-- Odometer Min CSS-->
-    <link rel="stylesheet" href="https://horizonlogisticsllc.us/frontend/assets/css/odometer.min.css">
-    <!-- Style CSS -->
-    <link rel="stylesheet" href="https://horizonlogisticsllc.us/frontend/assets/css/style.css">
-    <!-- Responsive CSS -->
-    <link rel="stylesheet" href="https://horizonlogisticsllc.us/frontend/assets/css/responsive.css">
+    <!-- Local Styles -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <script src="assets/js/main.js"></script>
 
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="envirologo.jpeg">
@@ -62,7 +42,7 @@
                         </li>
                         <li>
                             <i class="bx bx-phone-call"></i>
-                            <a href="tel:+1(561)203-9092"> +1(561)203-9092</a>
+                            <a href="tel:+1(443)218-6553"> (443)218-6553</a>
                         </li>
                         <li>
                             <i class="bx bx-envelope"></i>
@@ -76,7 +56,7 @@
                         <ul class="flag-area">
                             <li class="flag-item-top">
                                 <a href="#" class="flag-bar">
-                                    <img src="https://horizonlogisticsllc.us/frontend/assets/img/flag/usa.png" alt="Image">
+                                    <!-- flag image removed (external/unrecognized) -->
                                     <span>USA</span>
                                 </a>
                             </li>
@@ -150,13 +130,6 @@
                             </li>
                         </ul>
 
-                        <div class="others-option">
-                            <div class="get-quote">
-                                <a href="dispatching-form.html" class="default-btn">
-                                    <span>Start Trucking Dispatch</span>
-                                </a>
-                            </div>
-                        </div>
                     </div>
                 </nav>
             </div>
@@ -177,7 +150,7 @@
                         <div class="others-option justify-content-center d-flex align-items-center">
                             <div class="get-quote">
                                 <a href="dispatching-form.html" class="default-btn">
-                                    <span>Start Trucking Dispatch</span>
+                                    <span>Contact Us</span>
                                 </a>
                             </div>
                         </div>
@@ -341,7 +314,7 @@
                         </li>
                         <li>
                             <i class="bx bxs-phone-call"></i>
-                            <a href="tel:+1(561)203-9092">+1(561)203-9092</a>
+                            <a href="tel:+1(443)218-6553">+1(443)218-6553</a>
                         </li>
                     </ul>
                 </div>
@@ -370,36 +343,13 @@
 <!-- End Go Top Area -->
 
 
-<!-- Jquery Min JS -->
-<script src="https://horizonlogisticsllc.us/frontend/assets/js/jquery.min.js"></script>
-<!-- Bootstrap Bundle Min JS -->
-<script src="https://horizonlogisticsllc.us/frontend/assets/js/bootstrap.bundle.min.js"></script>
-<!-- Meanmenu Min JS -->
-<script src="https://horizonlogisticsllc.us/frontend/assets/js/meanmenu.min.js"></script>
-<!-- Wow Min JS -->
-<script src="https://horizonlogisticsllc.us/frontend/assets/js/wow.min.js"></script>
-<!-- Owl Carousel Min JS -->
-<script src="https://horizonlogisticsllc.us/frontend/assets/js/owl.carousel.min.js"></script>
-<!-- Nice Select Min JS -->
-<script src="https://horizonlogisticsllc.us/frontend/assets/js/nice-select.min.js"></script>
-<!-- Magnific Popup Min JS -->
-<script src="https://horizonlogisticsllc.us/frontend/assets/js/magnific-popup.min.js"></script>
-<!-- Jarallax Min JS -->
-<script src="https://horizonlogisticsllc.us/frontend/assets/js/jarallax.min.js"></script>
-<!-- Appear Min JS -->
-<script src="https://horizonlogisticsllc.us/frontend/assets/js/appear.min.js"></script>
-<!-- Odometer Min JS -->
-<script src="https://horizonlogisticsllc.us/frontend/assets/js/odometer.min.js"></script>
-<!-- Smoothscroll Min JS -->
-<script src="https://horizonlogisticsllc.us/frontend/assets/js/smoothscroll.min.js"></script>
-<!-- Form Validator Min JS -->
-<script src="https://horizonlogisticsllc.us/frontend/assets/js/form-validator.min.js"></script>
-<!-- Contact JS -->
-<script src="https://horizonlogisticsllc.us/frontend/assets/js/contact-form-script.js"></script>
-<!-- Ajaxchimp Min JS -->
-<script src="https://horizonlogisticsllc.us/frontend/assets/js/ajaxchimp.min.js"></script>
-<!-- Custom JS -->
-<script src="https://horizonlogisticsllc.us/frontend/assets/js/custom.js"></script>
+<!-- Minimal local JS: hide preloader so page becomes visible without external scripts -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    var pre = document.querySelector('.preloader');
+    if (pre) pre.style.display = 'none';
+});
+</script>
 
-<script src="https://www.drv.tw/inc/wd.js?s=envirologisticsllcsusa"></script></body>
+</body>
 </html>
