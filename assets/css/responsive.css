@@ -25,6 +25,44 @@
     .footer-area .row { flex-direction: column; text-align: center; }
     .single-footer-widget { margin-bottom: 30px; }
     .go-top { bottom: 10px; right: 10px; width: 40px; height: 40px; }
+        .header-area .top-header {
+            text-align: center;
+        }
+        .header-left-content {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        .header-left-content li {
+            margin-bottom: 6px;
+            margin-right: 0;
+            display: block;
+        }
+        .header-right-content {
+            text-align: center;
+            margin-top: 8px;
+        }
+        .navbar-brand img,
+        .mobile-menu .logo img {
+            max-width: 64px;
+            height: auto;
+            margin: 12px auto 12px auto;
+            display: block;
+        }
+        .navbar-brand {
+            width: 64px !important;
+            min-width: 0 !important;
+            margin-right: 0 !important;
+            display: flex;
+            justify-content: center;
+        }
+        .mobile-menu .logo {
+            width: 64px !important;
+            min-width: 0 !important;
+            margin-right: 0 !important;
+            display: flex;
+            justify-content: center;
+        }
 }
 
 /* Small Mobile (max-width: 480px) */
@@ -35,4 +73,25 @@
     .default-btn { padding: 8px 15px; font-size: 14px; }
     .single-services-box { padding: 20px; }
     .single-services-box h3 { font-size: 20px; }
+        .navbar-brand img,
+        .mobile-menu .logo img {
+            max-width: 44px;
+            height: auto;
+            margin: 8px auto 8px auto;
+            display: block;
+        }
+        .navbar-brand {
+            width: 44px !important;
+            min-width: 0 !important;
+            margin-right: 0 !important;
+            display: flex;
+            justify-content: center;
+        }
+        .mobile-menu .logo {
+            width: 44px !important;
+            min-width: 0 !important;
+            margin-right: 0 !important;
+            display: flex;
+            justify-content: center;
+        }
 }
