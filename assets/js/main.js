@@ -1,4 +1,4 @@
-// Main JS for Enviro Logistics LLC
+// Main JS for Quality Logistics Solution II.INC
 // Add interactive features here
 
 document.addEventListener('DOMContentLoaded', function() {
