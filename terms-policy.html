@@ -14,6 +14,286 @@
     <link rel="icon" type="image/png" href="envirologo.jpeg">
     <!-- Title -->
     <title>Terms and Policy - Quality Logistics Solution II.INC</title>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+ 
+    :root {
+      --bg: #f5f3ef;
+      --surface: #ffffff;
+      --ink: #1a1a18;
+      --muted: #6b6b63;
+      --accent: #c8502a;
+      --border: #e0ddd7;
+      --rule: #d6d2ca;
+    }
+ 
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: var(--bg);
+      color: var(--ink);
+      min-height: 100vh;
+      padding: 48px 24px 80px;
+    }
+ 
+    .wrapper {
+      max-width: 760px;
+      margin: 0 auto;
+    }
+ 
+    /* Header */
+    .site-header {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 56px;
+      padding-bottom: 24px;
+      border-bottom: 1px solid var(--rule);
+    }
+ 
+    .logo-mark {
+      width: 40px;
+      height: 40px;
+      background: var(--accent);
+      border-radius: 6px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+ 
+    .logo-mark svg { display: block; }
+ 
+    .company-name {
+      font-family: 'DM Serif Display', serif;
+      font-size: 1rem;
+      line-height: 1.25;
+      color: var(--ink);
+    }
+ 
+    .company-name span {
+      display: block;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.7rem;
+      font-weight: 400;
+      color: var(--muted);
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+    }
+ 
+    /* Page title */
+    .page-title-block {
+      margin-bottom: 48px;
+    }
+ 
+    .eyebrow {
+      font-size: 0.72rem;
+      font-weight: 500;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 12px;
+    }
+ 
+    h1 {
+      font-family: 'DM Serif Display', serif;
+      font-size: clamp(2rem, 5vw, 3rem);
+      line-height: 1.1;
+      color: var(--ink);
+    }
+ 
+    .updated {
+      margin-top: 10px;
+      font-size: 0.82rem;
+      color: var(--muted);
+    }
+ 
+    /* Table of contents */
+    .toc {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 24px 28px;
+      margin-bottom: 52px;
+    }
+ 
+    .toc-title {
+      font-size: 0.72rem;
+      font-weight: 500;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 14px;
+    }
+ 
+    .toc ol {
+      list-style: none;
+      counter-reset: toc;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+ 
+    .toc li { counter-increment: toc; }
+ 
+    .toc a {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+      color: var(--ink);
+      font-size: 0.9rem;
+      transition: color 0.15s;
+    }
+ 
+    .toc a::before {
+      content: counter(toc, decimal-leading-zero);
+      font-size: 0.7rem;
+      font-weight: 500;
+      color: var(--accent);
+      min-width: 22px;
+    }
+ 
+    .toc a:hover { color: var(--accent); }
+ 
+    /* Sections */
+    .policy-section {
+      margin-bottom: 48px;
+      scroll-margin-top: 32px;
+    }
+ 
+    .section-header {
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+      margin-bottom: 20px;
+    }
+ 
+    .section-number {
+      font-size: 0.7rem;
+      font-weight: 500;
+      color: var(--accent);
+      letter-spacing: 0.08em;
+      padding-top: 5px;
+      min-width: 24px;
+    }
+ 
+    h2 {
+      font-family: 'DM Serif Display', serif;
+      font-size: 1.4rem;
+      line-height: 1.2;
+      color: var(--ink);
+    }
+ 
+    .section-body {
+      padding-left: 40px;
+    }
+ 
+    p {
+      font-size: 0.95rem;
+      line-height: 1.75;
+      color: #3a3a36;
+      margin-bottom: 16px;
+    }
+ 
+    p:last-child { margin-bottom: 0; }
+ 
+    /* Sub-items */
+    .policy-items {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      margin-top: 4px;
+    }
+ 
+    .policy-item {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-left: 3px solid var(--accent);
+      border-radius: 0 8px 8px 0;
+      padding: 16px 20px;
+    }
+ 
+    .policy-item-label {
+      font-size: 0.78rem;
+      font-weight: 500;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 6px;
+    }
+ 
+    .policy-item p {
+      margin-bottom: 0;
+      font-size: 0.9rem;
+    }
+ 
+    /* Divider */
+    hr.section-divider {
+      border: none;
+      border-top: 1px solid var(--rule);
+      margin-bottom: 48px;
+    }
+ 
+    /* Contact card */
+    .contact-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 28px 32px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+ 
+    .contact-row {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+ 
+    .contact-icon {
+      width: 36px;
+      height: 36px;
+      border-radius: 8px;
+      background: #f0ede8;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+ 
+    .contact-info { display: flex; flex-direction: column; gap: 2px; }
+ 
+    .contact-label {
+      font-size: 0.7rem;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--muted);
+    }
+ 
+    .contact-value {
+      font-size: 0.92rem;
+      color: var(--ink);
+    }
+ 
+    a.contact-link {
+      color: var(--accent);
+      text-decoration: none;
+    }
+ 
+    a.contact-link:hover { text-decoration: underline; }
+ 
+    /* Footer */
+    .page-footer {
+      margin-top: 64px;
+      padding-top: 24px;
+      border-top: 1px solid var(--rule);
+      font-size: 0.78rem;
+      color: var(--muted);
+      text-align: center;
+    }
+  </style>
 </head>
 
 <body>
@@ -32,7 +312,7 @@
                             QUALITY LOGISTICS SOLUTIONS II INC4451 NW 110TH AVE NCORAL SPRINGS, FL 33065                        </li>
                         <li>
                             <i class="bx bx-phone-call"></i>
-                            <a href="tel:+1 (954)510-9768">  (954)510-9768</a>
+                            <a href="tel:+1  (954)206-9030">   (954)206-9030</a>
                         </li>
                         <li>
                             <i class="bx bx-envelope"></i>
@@ -57,54 +337,135 @@
 </header>
 <!-- End Header Area -->
 
-
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="policy-section">
-                    <h3>Privacy Policy</h3>
-<p>No mobile information will be shared with third parties/affiliates for marketing/promotional purposes. All other categories exclude text messaging originator opt-in data and consent; this information will not be shared with any third parties
-</p>
-                    <h4>1. Information We Collect</h4>
-                    <p>We may collect:</p>
-                    <ul>
-                        <li>Contact details (name, email, phone)</li>
-                        <li>Business information (MC, DOT, insurance)</li>
-                        <li>Communication records</li>
-                        <li>Dispatch and load-related information</li>
-                    </ul>
-
-                    <h4>2. How We Use Your Information</h4>
-                    <p>Your information is used for:</p>
-                    <ul>
-                        <li>Dispatching and coordinating shipments</li>
-                        <li>Broker communication</li>
-                        <li>Account verification</li>
-                        <li>Customer support</li>
-                        <li>Improving service quality</li>
-                    </ul>
-
-                    <h4>3. Data Protection</h4>
-                    <p>We use industry-standard security practices to protect stored data. However, no method of transmission is 100% secure.</p>
-
-                    <h4>4. Sharing of Information</h4>
-                    <p>We may share information only with:</p>
-                    <ul>
-                        <li>Brokers/shippers for booking loads</li>
-                        <li>Legal authorities if required</li>
-                        <li>Internal staff for operational purposes</li>
-                    </ul>
-                    <p>We do NOT sell customer information.</p>
-
-                    <h4>5. Cookies & Tracking</h4>
-                    <p>Our website may use cookies for performance, analytics, and user experience enhancement.</p>
-
-                    <h4>6. Policy Updates</h4>
-                    <p>Quality Logistics may update these policies at any time. Continued use of our services means you accept updated terms.</p>
-
-                    <div class="contact-legal" style="text-align: center; margin-top: 30px;">
-                        <p>If you have questions, contact us at <a href="mailto:hilakhiuvd@gmail.com">hilakhiuvd@gmail.com</a> or <a href="tel:+1 (954)510-9768"> (954)510-9768</a>.</p>
-                        <a href="index.html" class="default-btn">Back to Home</a>
-                    </div>
+<div class="wrapper">
+ 
+    <!-- Page Title -->
+    <div class="page-title-block">
+      <p class="eyebrow">Legal Document</p>
+      <h1>Privacy Policy</h1>
+      <p class="updated">Last reviewed: May 2025</p>
+    </div>
+ 
+    <!-- Table of Contents -->
+    <nav class="toc" aria-label="Table of Contents">
+      <p class="toc-title">Contents</p>
+      <ol>
+        <li><a href="#information-we-collect">Information We Collect</a></li>
+        <li><a href="#use-of-information">Use of Information</a></li>
+        <li><a href="#sms-compliance">Mobile Messaging Privacy (SMS Compliance)</a></li>
+        <li><a href="#third-party-sharing">Third-Party Sharing</a></li>
+        <li><a href="#contact-us">Contact Us</a></li>
+      </ol>
+    </nav>
+ 
+    <!-- Intro -->
+    <p>At <strong>Quality Logistics Solutions II Inc.</strong>, we are committed to protecting your privacy. This Privacy Policy outlines how we handle your personal information when you use our services.</p>
+ 
+    <hr class="section-divider" />
+ 
+    <!-- Section 1 -->
+    <section class="policy-section" id="information-we-collect">
+      <div class="section-header">
+        <span class="section-number">01</span>
+        <h2>Information We Collect</h2>
+      </div>
+      <div class="section-body">
+        <p>We collect information you provide directly to us, such as your name, email address, and phone number — specifically when you sign up for our services or SMS notifications.</p>
+      </div>
+    </section>
+ 
+    <hr class="section-divider" />
+ 
+    <!-- Section 2 -->
+    <section class="policy-section" id="use-of-information">
+      <div class="section-header">
+        <span class="section-number">02</span>
+        <h2>Use of Information</h2>
+      </div>
+      <div class="section-body">
+        <p>We use the information collected to provide our services, respond to support requests, and send updates or promotional messages that you have consented to receive.</p>
+      </div>
+    </section>
+ 
+    <hr class="section-divider" />
+ 
+    <!-- Section 3 -->
+    <section class="policy-section" id="sms-compliance">
+      <div class="section-header">
+        <span class="section-number">03</span>
+        <h2>Mobile Messaging Privacy (SMS Compliance)</h2>
+      </div>
+      <div class="section-body">
+        <p>We value your privacy regarding our SMS program. Please review the following terms carefully.</p>
+        <div class="policy-items">
+          <div class="policy-item">
+            <p class="policy-item-label">Sharing</p>
+            <p>No mobile information will be shared with third parties or affiliates for marketing or promotional purposes.</p>
+          </div>
+          <div class="policy-item">
+            <p class="policy-item-label">Consent</p>
+            <p>All the above categories exclude text messaging originator opt-in data and consent. This information will not be shared with any third parties under any circumstances.</p>
+          </div>
+          <div class="policy-item">
+            <p class="policy-item-label">Opt-Out</p>
+            <p>You can cancel the SMS service at any time. Simply text <strong>"STOP"</strong> to our number. Once received, we will send you a confirmation SMS confirming you have been unsubscribed.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+ 
+    <hr class="section-divider" />
+ 
+    <!-- Section 4 -->
+    <section class="policy-section" id="third-party-sharing">
+      <div class="section-header">
+        <span class="section-number">04</span>
+        <h2>Third-Party Sharing</h2>
+      </div>
+      <div class="section-body">
+        <p>We do not sell, rent, or lease our customer lists to third parties. Your data is only used for the purpose for which it was collected.</p>
+      </div>
+    </section>
+ 
+    <hr class="section-divider" />
+ 
+    <!-- Section 5 -->
+    <section class="policy-section" id="contact-us">
+      <div class="section-header">
+        <span class="section-number">05</span>
+        <h2>Contact Us</h2>
+      </div>
+      <div class="section-body">
+        <p>If you have any questions about this Privacy Policy, please reach out to us through any of the following channels:</p>
+        <div class="contact-card">
+          <div class="contact-row">
+            <div class="contact-icon">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="1" y="3" width="14" height="10" rx="2" stroke="#c8502a" stroke-width="1.4"/>
+                <path d="M1 5l7 5 7-5" stroke="#c8502a" stroke-width="1.4" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <div class="contact-info">
+              <span class="contact-label">Email</span>
+              <span class="contact-value"><a href="mailto:hilakhiuvd@gmail.com" class="contact-link">hilakhiuvd@gmail.com</a></span>
+            </div>
+          </div>
+          <div class="contact-row">
+            <div class="contact-icon">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3 2h2.5l1 3L5 6.5c.8 1.6 2 2.8 3.5 3.5L10 8.5l3 1V12a1 1 0 01-1 1C5.4 13 3 7.8 3 3a1 1 0 010-1z" stroke="#c8502a" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <div class="contact-info">
+              <span class="contact-label">Phone</span>
+              <span class="contact-value"><a href="tel:+19542069030" class="contact-link">(954) 206-9030</a></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+ 
+  </div>
 
 <footer class="footer-area pt-100 pb-70">
     <!-- Copy the entire footer from index.html here -->
