@@ -1,4 +1,4 @@
-// Main JS for Hellostylle
+// Main JS for Quality logistics solutions II.inc
 // Add interactive features here
 
 document.addEventListener('DOMContentLoaded', function() {
